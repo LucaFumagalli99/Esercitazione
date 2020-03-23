@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  componentToShow:number=1
-  
+  componentToShow: number = 1;
+
 }
