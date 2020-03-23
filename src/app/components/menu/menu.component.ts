@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss']
+})
+export class MenuComponent implements OnInit {
+menuList:MenuItem[]=[
+  {id:1,description:"Home",selected:true},
+  {id:2,description:"Lista Giochi",selected:false},
+  {id:3,description:"Modifica Giochi",selected:false}
+]
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
