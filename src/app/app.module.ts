@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -7,6 +8,8 @@ import { GameListComponent } from './components/game-list/game-list.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { EditGameComponent } from './components/edit-game/edit-game.component';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import { GameDetailComponent } from './components/game-detail/game-detail.compon
     GameListComponent,
     MenuComponent,
     EditGameComponent,
-    GameDetailComponent
+    GameDetailComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
